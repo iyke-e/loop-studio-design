@@ -14,7 +14,7 @@
     --DarkGray: hsl(0, 0%, 55%);
     --VeryDarkGray: hsl(0, 0%, 41%);
     --gen-inline-padding: 1.875rem;
-    --gen-inline-padding-desktop: 10.375rem;
+    --gen-inline-padding-desktop: 5rem;
 }
 
 li {
@@ -47,7 +47,7 @@ button:hover {
 }
 
 html {
-    font-size: 100%;
+    font-size: 16px;
 }
 
 body {
@@ -83,23 +83,23 @@ h3 {
 
 
 h1 {
-    font-size: clamp(3.1875rem, 2.7033rem + 2.0657vw, 4.5625rem);
+    font-size: 2rem;
 }
 
 h2 {
-    font-size: clamp(2.5rem, 2.3239rem + 0.7512vw, 3rem);
+    font-size: 1.8rem;
     margin-block: 3rem 1rem;
 }
 
 h3 {
-    font-size: 2rem
+    font-size: 1.2rem
 }
 
 p,
 li,
 a {
     font-family: var(--font-Alata);
-    font-size: 1rem;
+    font-size: 0.9375rem;
 }
 
 .hero-section {
@@ -123,7 +123,8 @@ a {
 }
 
 .logo {
-    width: 11.5625rem;
+    width: 9rem;
+    object-fit: contain;
 }
 
 .hamburger {
@@ -167,7 +168,7 @@ nav ul li {
     position: relative;
     z-index: 999;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
 }
 
@@ -267,6 +268,7 @@ main {
 footer {
     display: grid;
     gap: 4rem;
+    height: fit-content;
     place-items: center;
     background-color: var(--Black);
     color: white;
@@ -299,12 +301,12 @@ footer .logo {
 }
 
 .social-icons+p {
-    margin-block-end: 5rem;
+    margin-block-end: 3rem;
 }
 
 
 
-@media (min-width: 600px) and (max-width: 900px) {
+@media (min-width: 600px) and (max-width: 930px) {
     .hamburger {
         display: none;
     }
@@ -336,7 +338,7 @@ footer .logo {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        height: 400px;
+        height: 450px;
     }
 
     .hero-text {
@@ -431,7 +433,19 @@ footer .logo {
     }
 }
 
-@media (min-width:900px) {
+@media (min-width:930px) {
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
 
     button,
     li {
